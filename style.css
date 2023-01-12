@@ -26,7 +26,7 @@ body {
 
 .menu__link {
     text-decoration: none;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -39,7 +39,7 @@ body {
 }
 
 .top__heading {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -50,7 +50,7 @@ body {
 }
 
 .top__title {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 55px;
@@ -60,7 +60,7 @@ body {
 }
 
 .top__text {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -75,12 +75,17 @@ body {
     border-radius: 5px;
     padding: 15px 30px;
     gap: 10px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 27px;
     color: #FFFFFF;
+}
+
+.top__button:hover {
+    background: #21427b;
+    color: #e099e2;
 }
 
 .top__logos {
@@ -112,7 +117,7 @@ body {
 }
 
 .info__heading {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -122,7 +127,7 @@ body {
 }
 
 .info__text {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -136,7 +141,7 @@ body {
     background: #3A68B8;
     border-radius: 5px;
     padding: 15px 30px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -146,7 +151,7 @@ body {
 }
 
 .content__heading {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -164,7 +169,7 @@ body {
 }
 
 .content__text {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -216,7 +221,7 @@ body {
 }
 
 .about__heading {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -226,7 +231,7 @@ body {
 }
 
 .about__text {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -239,5 +244,47 @@ body {
 
 .footer {
     background-color: #0a121f;
+    height: 250px;
+    padding-top: 48px;
+    padding-bottom: 47px;
 }
 
+.foot__item {
+    width: 362px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__heading {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.footer__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.center__text {
+
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    width: 261px;
+}
+.fi {
+    height: 156px;
+}
