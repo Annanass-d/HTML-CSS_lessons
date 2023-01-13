@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 
-$button-color: #3A68B8;
-$button-color-hover: #21427b; 
+@import "vars";
 
 body {
     background-color: #08101e;
@@ -37,59 +36,62 @@ body {
     padding: 40px 20px;
 }
 
+.menu__link:hover {
+    border-radius: 10px;
+}
+
 .top__left {
     width: 604px;
 }
 
 .top__heading {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 160%;
+    @include txt(('Open Sans', sans-serif), normal, 600, 18px, 160%, #3A68B8);
     text-transform: uppercase;
-    color: #3A68B8;
     margin-bottom: 10px;
 }
 
 .top__title {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 55px;
-    line-height: 130%;
-    color: #FFFFFF;
+    @include txt(('Open Sans', sans-serif), normal, 800, 55px, 130%, #FFFFFF);
     margin-bottom: 40px;
 }
 
 .top__text {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 160%;
-    color: #FFFFFF;
+    @include txt(('Open Sans', sans-serif), normal, 600, 18px, 160%, #FFFFFF);
     opacity: 0.7;
     margin-bottom: 50px;
 }
 
-.top__button {
+.button {
     background: $button-color;
     border-radius: 5px;
     padding: 15px 30px;
-    gap: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
+
+    &_hover:hover {
+        background: $button-color-hover;
+        color: $button-txt-color-hover;
+    }
 }
 
-.top__button:hover {
-    background: $button-color-hover;
-    color: #e099e2;
+// .top__button {
+//     gap: 10px;
+//     @include txt(('Open Sans', sans-serif), normal, 600, 20px, 27px, #FFFFFF);
+// }
+
+.top {
+    background-color: #0a121f;
+    padding-bottom: 99px;
+    padding-top: 160px;
+
+    &__button {
+        gap: 10px;
+        @include txt(('Open Sans', sans-serif), normal, 600, 20px, 27px, #FFFFFF);
+    }
 }
+
+// .top__button:hover {
+//     background: $button-color-hover;
+//     color: $button-txt-color-hover;
+// }
 
 .top__logos {
     margin-top: 200px;
@@ -100,12 +102,6 @@ body {
     justify-content: space-between;
 }
 
-.top {
-    background-color: #0a121f;
-    padding-bottom: 99px;
-    padding-top: 160px;
-}
-
 .align-center {
     align-items: center;
 }
@@ -113,54 +109,40 @@ body {
 .info {
     margin-top: 157px;
     margin-bottom: 264px;
+
+    &__button {
+        @include txt(('Open Sans', sans-serif), normal, 600, 16px, 22px, #FFFFFF)
+    }
 }
+
 
 .info__right {
     width: 484px;
 }
 
 .info__heading {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 130%;
-    color: #FFFFFF;
+    @include txt(('Open Sans', sans-serif), normal, 700, 40px, 130%, #FFFFFF);
     margin-bottom: 30px;
 }
 
 .info__text {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 160%;
-    color: #FFFFFF;
+    @include txt(('Open Sans', sans-serif), normal, 600, 16px, 160%, #FFFFFF);
     opacity: 0.7;
     margin-bottom: 50px;
 }
 
-.info__button {
-    background: #3A68B8;
-    border-radius: 5px;
-    padding: 15px 30px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
+// .info__button {
+//     @include txt(('Open Sans', sans-serif), normal, 600, 16px, 22px, #FFFFFF);
+// }
 
-}
+// .info__button:hover {
+//     background-color: $button-color-hover;
+//     color: $button-txt-color-hover;
+// }
 
 .content__heading {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 125%;
+    @include txt(('Open Sans', sans-serif), normal, 700, 25px, 125%, #FFFFFF);
     text-align: center;
-    color: #FFFFFF;
     opacity: 0.7;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -172,13 +154,8 @@ body {
 }
 
 .content__text {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 160%;
+    @include txt(('Open Sans', sans-serif), normal, 600, 16px, 160%, #FFFFFF);
     text-align: center;
-    color: #FFFFFF;
     opacity: 0.7;
 }
 
@@ -224,22 +201,12 @@ body {
 }
 
 .about__heading {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 130%;
-    color: #FFFFFF;
+    @include txt(('Open Sans', sans-serif), normal, 700, 40px, 130%, #FFFFFF);
     margin-bottom: 40px;
 }
 
 .about__text {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 160%;
-    color: #FFFFFF;
+    @include txt(('Open Sans', sans-serif), normal, 600, 16px, 160%, #FFFFFF);
     opacity: 0.7;
     width: 460px;
     margin-bottom: 20px;
@@ -260,34 +227,19 @@ body {
 }
 
 .footer__heading {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
+    @include txt(('Roboto', sans-serif), normal, 500, 16px, 19px, #FFFFFF);
 }
 
 .footer__text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
+    @include txt(('Roboto', sans-serif), normal, 500, 14px, 16px, #FFFFFF);
 }
 
 .center__text {
-
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
+    @include txt(('Roboto', sans-serif), italic, 100, 14px, 16px, #FFFFFF);
     opacity: 0.6;
     width: 261px;
 }
+
 .fi {
     height: 156px;
 }

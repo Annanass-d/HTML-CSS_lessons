@@ -1,0 +1,12 @@
+$button-color: #3A68B8;
+$button-color-hover: #21427b;
+$button-txt-color-hover: #e099e2;
+
+@mixin txt ($ff, $fst, $fw, $fsz, $lh, $clr) {
+    font-family: $ff;
+    font-style: $fst;
+    font-weight: $fw;
+    font-size: $fsz;
+    line-height: $lh;
+    color: $clr;
+}

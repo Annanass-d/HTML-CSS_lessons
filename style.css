@@ -34,6 +34,10 @@ body {
   padding: 40px 20px;
 }
 
+.menu__link:hover {
+  border-radius: 10px;
+}
+
 .top__left {
   width: 604px;
 }
@@ -44,8 +48,8 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 160%;
-  text-transform: uppercase;
   color: #3A68B8;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -70,10 +74,22 @@ body {
   margin-bottom: 50px;
 }
 
-.top__button {
+.button {
   background: #3A68B8;
   border-radius: 5px;
   padding: 15px 30px;
+}
+.button_hover:hover {
+  background: #21427b;
+  color: #e099e2;
+}
+
+.top {
+  background-color: #0a121f;
+  padding-bottom: 99px;
+  padding-top: 160px;
+}
+.top__button {
   gap: 10px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -81,11 +97,6 @@ body {
   font-size: 20px;
   line-height: 27px;
   color: #FFFFFF;
-}
-
-.top__button:hover {
-  background: #21427b;
-  color: #e099e2;
 }
 
 .top__logos {
@@ -97,12 +108,6 @@ body {
   justify-content: space-between;
 }
 
-.top {
-  background-color: #0a121f;
-  padding-bottom: 99px;
-  padding-top: 160px;
-}
-
 .align-center {
   align-items: center;
 }
@@ -110,6 +115,14 @@ body {
 .info {
   margin-top: 157px;
   margin-bottom: 264px;
+}
+.info__button {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
 }
 
 .info__right {
@@ -137,26 +150,14 @@ body {
   margin-bottom: 50px;
 }
 
-.info__button {
-  background: #3A68B8;
-  border-radius: 5px;
-  padding: 15px 30px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  color: #FFFFFF;
-}
-
 .content__heading {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 125%;
-  text-align: center;
   color: #FFFFFF;
+  text-align: center;
   opacity: 0.7;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -173,8 +174,8 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
-  text-align: center;
   color: #FFFFFF;
+  text-align: center;
   opacity: 0.7;
 }
 
