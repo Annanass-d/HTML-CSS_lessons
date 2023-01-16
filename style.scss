@@ -7,6 +7,32 @@
 
 @import "vars";
 
+@keyframes myAnim {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
 body {
     background-color: #08101e;
 }
@@ -34,10 +60,14 @@ body {
     font-size: 16px;
     color: #FFFFFF;
     padding: 40px 20px;
+    transition: color 0.3s;
 }
 
 .menu__link:hover {
+    background-color: $button-color-hover;
+    color: $button-txt-color-hover;
     border-radius: 10px;
+    transition: background-color 0.3s;    
 }
 
 .top__left {
@@ -62,13 +92,16 @@ body {
 }
 
 .button {
-    background: $button-color;
+    background-color: $button-color;
     border-radius: 5px;
     padding: 15px 30px;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
 
     &_hover:hover {
-        background: $button-color-hover;
+        background-color: $button-color-hover;
         color: $button-txt-color-hover;
+        transform: translate(-15px, 15px) scale(1.3) rotate(5deg);
     }
 }
 
@@ -242,4 +275,8 @@ body {
 
 .fi {
     height: 156px;
+}
+
+.img_vibrate {
+    animation: myAnim 1s ease 0s infinite normal forwards;
 }
