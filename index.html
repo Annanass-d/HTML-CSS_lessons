@@ -6,25 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__menu">
+            <nav class="header__menu">
                 <a class="menu__link button_hover" href="#">Home</a>
                 <a class="menu__link button_hover" href="#">About</a>
                 <a class="menu__link button_hover" href="#">Services</a>
                 <a class="menu__link button_hover" href="#">Blog</a>
                 <a class="menu__link button_hover" href="#">Contact</a>
-            </div>
+            </nav>
         </div>
     </header>
 
-    <div class="top">
+    <section class="top">
         <div class="top__content">
             <div class="container flexbox">
                 <div class="top__left">
@@ -39,24 +43,24 @@
                     </div>
                 </div>
                 <div class="top__right">
-                    <!-- <img src="img/top.png" alt="main picture"> -->
-                    <video controls preload="metadata" height="350" width="450">
+                    <img src="img/top.png" alt="image top">
+                    <!-- <video controls preload="metadata" height="350" width="450">
                         <source src="video/video-top.mp4" type="video/mp4">
-                    </video>
+                    </video> -->
                 </div>
             </div>
         </div>
         <div class="top__logos">
-            <div class="container flexbox">
-                <img src="img/Group 400.png" alt="logo image">
-                <img src="img/Group 401.png" alt="logo image">
-                <img src="img/Group 402.png" alt="logo image">
-                <img src="img/Group 403.png" alt="logo image">
+            <div class="container flexbox flex-logos">
+                <div class="logos"><img src="img/logo1.png" alt="logo image"></div>
+                <div class="logos"><img src="img/logo2.png" alt="logo image"></div>
+                <div class="logos"><img src="img/logo3.png" alt="logo image"></div>
+                <div class="logos"><img src="img/logo4.png" alt="logo image"></div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="info">
+    <section class="info">
         <div class="container flexbox align-center">
             <div class="info__left">
                 <img class="img_vibrate" src="img/info.png" alt="image about">
@@ -68,61 +72,57 @@
                 <button class="button info__button button_hover">Learn More</button>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="content">
-        <div class="container">
-            <div class="content__top flexbox">
-                <div class="item small">
-                    <img src="img/welcome-1.png" alt="welcome image">
-                    <h5 class="content__heading">Expert Prespective Agency Awards</h5>
-                    <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-                        industries for previewing layouts and visual mockups.</p>
-                </div>
-                <div class="item small">
-                    <img src="img/welcome-2.png" alt="welcome image">
-                    <h5 class="content__heading">Business Prespective Global Agency Awards</h5>
-                    <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-                        industries for previewing layouts and visual mockups.</p>
-                </div>
-                <div class="item small">
-                    <img src="img/welcome-3.png" alt="welcome image">
-                    <h5 class="content__heading">Value for Results in Global Agency Awards</h5>
-                    <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-                        industries for previewing layouts and visual mockups.</p>
-                </div>
+    <section class="content">
+        <div class="container grid">
+            <div class="item">
+                <img src="img/welcome-1.png" alt="welcome image">
+                <h5 class="content__heading">Expert Prespective Agency Awards</h5>
+                <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+                    industries for previewing layouts and visual mockups.</p>
             </div>
-            <div class="content__bottom flexbox">
-                <div class="item big">
-                    <img src="img/welcome.svg" class="big__img" alt="welcome image">
-                    <h5 class="content__heading h__big">In print, and publishing industries for previewing layouts and
-                        visual
-                        mockups.</h5>
-                    <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-                        industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly
-                        used in print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum
-                        is placeholder text commonly used in print, and publishing industries for previewing layouts and
-                        visual mockups.</p>
-                </div>
-                <div class="content__bottom__right">
-                    <div class="item small top">
-                        <img src="img/welcome-3.png" alt="welcome image">
-                        <h5 class="content__heading">Value for Results in Global Agency Awards</h5>
-                        <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-                            industries for previewing layouts and visual mockups.</p>
-                    </div>
-                    <div class="item small">
-                        <img src="img/welcome-3.png" alt="welcome image">
-                        <h5 class="content__heading">Value for Results in Global Agency Awards</h5>
-                        <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
-                            industries for previewing layouts and visual mockups.</p>
-                    </div>
-                </div>
+            <div class="item">
+                <img src="img/welcome-2.png" alt="welcome image">
+                <h5 class="content__heading">Business Prespective Global Agency Awards</h5>
+                <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+                    industries for previewing layouts and visual mockups.</p>
+            </div>
+            <div class="item">
+                <img src="img/welcome-3.png" alt="welcome image">
+                <h5 class="content__heading">Value for Results in Global Agency Awards</h5>
+                <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+                    industries for previewing layouts and visual mockups.</p>
+            </div>
+
+            <div class="item big display-none">
+                <img src="img/welcome.svg" class="big__img" alt="welcome image">
+                <h5 class="content__heading h__big">In print, and publishing industries for previewing layouts and
+                    visual
+                    mockups.</h5>
+                <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+                    industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly
+                    used in print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum
+                    is placeholder text commonly used in print, and publishing industries for previewing layouts and
+                    visual mockups.</p>
+            </div>
+
+            <div class="item display-none">
+                <img src="img/welcome-3.png" alt="welcome image">
+                <h5 class="content__heading">Value for Results in Global Agency Awards</h5>
+                <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+                    industries for previewing layouts and visual mockups.</p>
+            </div>
+            <div class="item display-none">
+                <img src="img/welcome-3.png" alt="welcome image">
+                <h5 class="content__heading">Value for Results in Global Agency Awards</h5>
+                <p class="content__text">Lorem ipsum is placeholder text commonly used in print, and publishing
+                    industries for previewing layouts and visual mockups.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="about">
+    <section class="about">
         <div class="container flexbox">
             <div class="about__left">
                 <h3 class="about__heading">What our clients say about our awesome solutions</h3>
@@ -135,28 +135,43 @@
                     publishing industries for previewing layouts and visual mockups.</p>
             </div>
             <div class="about__right">
-                <img src="img/about1.png" alt="main picture">
+                <img class="about__img" src="img/about1.png" alt="image about">
             </div>
         </div>
-    </div>
+    </section>
 
     <footer class="footer">
         <div class="container flexbox fi">
-                <div class="foot__item">
-                    <h5 class="footer__heading">INFORMATION</h5>
+            <div class="foot__item">
+                <h5 class="footer__heading">INFORMATION</h5>
+                <div class="footer__icons">
+                    <img class="icon" src="img/envelope.svg" alt="envelope icon">
                     <p class="footer__text">Company@gmail.com.com</p>
+                </div>
+                <div class="footer__icons">
+                    <img class="icon" src="img/phone.svg" alt="phone icon">
                     <p class="footer__text">Phone: (064) 332-1233</p>
+                </div>
+                <div class="footer__icons">
+                    <img class="icon" src="img/location-dot.svg" alt="location icon">
                     <p class="footer__text">450 Wall Street, USA, New York</p>
                 </div>
-                <div class="foot__item">
-                    <h5 class="footer__heading">ABOUT THE STORE</h5>
-                    <p class="center__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        layouts and visual mockups.</p>
+
+            </div>
+            <div class="foot__item">
+                <h5 class="footer__heading">ABOUT THE STORE</h5>
+                <p class="center__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                    layouts and visual mockups.</p>
+            </div>
+            <div class="foot__item">
+                <h5 class="footer__heading">ABOUT THE STORE</h5>
+                <p class="footer__text">www.company.com</p>
+                <div class="icons-box">
+                    <img class="icon" src="img/twitter.svg" alt="twitter icon">
+                    <img class="icon" src="img/linkedin.svg" alt="linkedin icon">
+                    <img class="icon" src="img/youtube.svg" alt="youtube icon">
                 </div>
-                <div class="foot__item">
-                    <h5 class="footer__heading">ABOUT THE STORE</h5>
-                    <p class="footer__text">www.company.com</p>
-                </div>
+            </div>
         </div>
     </footer>
 </body>
