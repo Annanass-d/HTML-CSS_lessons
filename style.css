@@ -396,7 +396,7 @@ body {
     margin-bottom: 120px;
   }
   .top__right {
-    width: 65%;
+    width: 60%;
     text-align: center;
   }
   .flex-logos {
@@ -412,7 +412,7 @@ body {
     justify-content: center;
   }
   .info__left {
-    width: 80%;
+    width: 75%;
     margin-bottom: 68px;
     text-align: center;
   }
@@ -436,7 +436,7 @@ body {
     margin-bottom: 64px;
   }
   .about__right {
-    width: 80%;
+    width: 75%;
     text-align: center;
   }
   .footer {
